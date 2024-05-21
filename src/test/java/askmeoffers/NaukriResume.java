@@ -39,6 +39,9 @@ public class NaukriResume {
 
         System.out.println("Resume updated succesfully");
 
+        page.locator(".nI-gNb-drawer__icon").click();
+        page.locator("a[title='Logout']").click();
+
         page.close();
         browser.close();
         playwright.close();
